@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M6VTV3TC');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+        @keyframes scaleAnimation {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.2);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+    
+        .special-offer {
+          position: relative;
+          display: inline-block; /* or use block if you want it to take full width */
+        }
+    
+        .special-offer img {
+          display: block;
+          width: 100%;
+          height: auto;
+          animation: scaleAnimation 2s infinite; /* adjust the duration as needed */
+        }
+      </style>
+    <title>Beliptv Tutorial Guide</title>
+    <link href="https://fonts.cdnfonts.com/css/nero" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+    <script  src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script   type="module" src="javascript/tutorialPage.js"></script>
+</head>
+<body class="background dark:backgroundDark dark:bg-gray-900 scroll-smooth font-helvetica">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6VTV3TC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="fixed w-full  z-50">
+        <!-- <div class="w-full px-2 py-4 h-20  gap-4 sm:gap-8 bg-yellow-300 flex justify-center gap-8 items-center">
+            <div class="">
+               <p id="dynamicText" class="text-black text-xsm text-center    font-semibold sm:font-bold"></p>
+            </div>
+            <div class="special-offer w-110">
+                <img src="img/special-offer.svg" class="w-full" alt="special offre">
+            </div>
+
+            <a href="index.html#one-year" class="inline-flex items-center relative top-1 px-4 py-2 text-sm font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                <p>Buy Now</p>
+            </a>
+            <p id="demo" class="text-slate-800 text-sm text-center font-bold "></p>
+        </div> -->
+        <script>
+            // Function to update the content of the <p> element
+        function updateContent() {
+            // Get the <p> element by its id
+            var paragraph = document.getElementById("dynamicText");
+            console.log(paragraph)
+
+            // Array of different content to cycle through
+            var contentArray = [
+                "2 devices - 1 year Plan <span class='text-lg text-red md:text-xl'>+ 6 </span><span class='text-red'>months extra</span>",
+                "1 year Plan <span class='text-lg text-red md:text-xl'>+ 3 <span class='text-red'>months extra</span>",
+                "6 months Plan <span class='text-lg text-red md:text-xl'>+ 1 <span class='text-red'>month extra</span>"
+                // Add more content as needed
+            ];
+
+            // Get a random index from the array
+            var randomIndex = Math.floor(Math.random() * contentArray.length);
+
+            // Update the content of the <p> element
+            paragraph.innerHTML = contentArray[randomIndex];
+        }
+
+        // Set up an interval to call the updateContent function every 5 seconds (5000 milliseconds)
+        setInterval(updateContent, 4000);
+// Set the date we're counting down to
+var countDownDate = new Date("jan 16, 2024 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+// Get today's date and time
+var now = new Date().getTime();
+
+// Find the distance between now and the count down date
+var distance = countDownDate - now;
+// Time calculations for days, hours, minutes and seconds
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+// Display the result in the element with id="demo"
+document.getElementById("demo").innerHTML = days + "d " + hours + "h "
++ minutes + "m " + seconds + "s ";
+
+// If the count down is finished, write some text
+if (distance < 0) {
+clearInterval(x);
+document.getElementById("demo").innerHTML = "EXPIRED";
+}
+}, 1000);
+        </script>      
+        <!-- OFFRE FINISH -->
+        <nav class="bg-white dark:bg-gray-900  w-full z-20 top-0 left-0 ">
+          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <div class="flex flex-col">
+                  <span class=" bg-clip-text max-w-2xl  text-2xl sm:text-4xl font-extrabold tracking-wider text-pink-500 " style="font-family: 'Nero', sans-serif;">BELIPTV  </span>
+                  <span class=" italic sm:text-xs font-bold tracking-wider text-slate-500" style="font-size: 8px;">LIVE CHANNELS AND VOD</span>
+              </div>
+          <div class="flex md:order-2 ">
+              
+              <div class="p-2 switchLangDiv">
+                  <div class="currentLang  flex gap-2 justify-center items-center cursor-pointer bg-blue-500 p-2 px-4 rounded-sm text-slate-700 dark:text-slate-300">
+                      <span class="text-slate-50">English</span>
+                      <img src="img/lan-svg/gb.svg" class="h-5 w-5 rounded-full" alt="england flag">
+                     
+                  </div>
+                  <div class="absolute hidden w-110 top-16 py-4 flex-col gap-4 justify-center items-center bg-white dark:bg-slate-900 border-1 border-blue-600 rounded-sm">
+                    <a href ='tutorial-de.html'  class="lanOption cursor-pointer nl pr-2 flex gap-2">
+                        <span class="text-slate-800 dark:text-slate-300">Dutch</span>
+                        <img src="img/lan-svg/nl.svg" class="h-5 w-5 rounded-full" alt="netherland flag">
+                    </a>
+                  </div>
+              </div>
+     
+              <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+              </button>
+              <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 ml-2">
+                  <svg id="theme-toggle-dark-icon" class="theme-toggle-dark-icon hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                  <svg id="theme-toggle-light-icon" class="hidden theme-toggle-light-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+              </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="index.html"  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                </li>
+                <li>
+                <a href="index.html#pricing" id="pricing-link" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+                </li>
+                <li>
+                <a href="channels-list.html" class="block py-2 pl-3 pr-4 text-gray-900 dark:text-slate-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Channels</a>
+                </li>
+                <li>
+                    <a href="tutorial.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" >Tutorial</a>
+                </li>  
+            </ul>
+          </div>
+          </div>
+      </nav>
+      </header> 
+<!-- about main -->
+
+    <main class="px-2 pt-32 lg:px-20 ">
+        <div class=" mb-20 mx-auto px-2 max-w-screen-575 md:max-w-screen-sm  lg:max-w-screen-md 2xl:max-w-screen-lg 2xl:pl-9" >
+            <div class=" flex gap-2 mt-4 mb-8">
+                <a href="index.html" class="font-semibold text-slate-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/> <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/> </svg>
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-slate-500 pt-1" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg>
+                <a href="tutorial.html" class="font-thin text-sm text-slate-500">Installation Tutorials</a>
+            </div>
+            <h1 class="max-w-2xl  uppercase text-2xl mb-4  text-black font-black tracking-tight leading-none  sm:text-3xl lg:text-4xl dark:text-slate-300 ">Installation Tutorials</h1>
+            <hr class="max-w-216 bg-slate-800 h-1 rounded-sm  dark:bg-slate-300">
+        </div>
+        <div class=" py-2 mb-10  xl:w-9/12 xl:mx-auto">
+            <ul class="tab-nav-menu px-2 flex items-center gap-4  overflow-scroll overflow-y-hidden 575:overflow-hidden 575:mx-auto 575:justify-center sm:w-11/12">
+                <li class="tab-btn active-tab text-center h-2/3 min-w-100 p-3  cursor-pointer font-semibold text-base text-black bg-gray-200 dark:bg-gray-800 dark:text-slate-200 rounded-xl hover:bg-gray-300 hover:dark:bg-gray-700">
+                    <span >Smart Tv</span> 
+                </li>
+                <li class="tab-btn text-center h-2/3 min-w-100 p-3  cursor-pointer font-semibold text-base text-black bg-gray-200 dark:bg-gray-800 dark:text-slate-200 rounded-xl hover:bg-gray-300 hover:dark:bg-gray-700">
+                    <span>Android</span> 
+                </li>
+                <li class="tab-btn text-center h-2/3 min-w-100 p-3  cursor-pointer font-semibold text-base text-black bg-gray-200 dark:bg-gray-800 dark:text-slate-200 rounded-xl hover:bg-gray-300 hover:dark:bg-gray-700">
+                
+                    <span>FireStick</span> 
+                </li>
+                <li class="tab-btn text-center h-2/3 min-w-100 p-3  cursor-pointer font-semibold text-base text-black bg-gray-200 dark:bg-gray-800 dark:text-slate-200 rounded-xl hover:bg-gray-300 hover:dark:bg-gray-700">
+                
+                    <span>Apple/Ios</span> 
+                </li>
+                <li class="tab-btn text-center h-2/3 min-w-100 p-3  cursor-pointer font-semibold text-base text-black bg-gray-200 dark:bg-gray-800 dark:text-slate-200 rounded-xl hover:bg-gray-300 hover:dark:bg-gray-700">
+                    <span>PC / MAC</span> 
+                </li>
+                <li class="tab-btn text-center h-2/3 min-w-100 p-3  cursor-pointer font-semibold text-base text-black bg-gray-200 dark:bg-gray-800 dark:text-slate-200 rounded-xl hover:bg-gray-300 hover:dark:bg-gray-700">
+                
+                    <span>Mag</span> 
+                </li>  
+            </ul>
+        </div>
+        <div class="mb-20 mx-auto  px-2 max-w-screen-575 md:max-w-screen-sm  lg:max-w-screen-md 2xl:max-w-screen-lg 2xl:pl-9" >  
+                <!-- smart tv -->
+           <div class="tab-content " >
+                <p class="text-base mb-6  text-slate-700 dark:text-slate-500">
+                    There are plenty of choices when it comes to IPTV devices that let you stream live TV.
+                    With so many choices available, it was only a matter of time before someone created a way 
+                    to stream IPTV to Smart TV. The Google Play Store, Amazon App Store, Samsung App Store, etc
+                    are filled with IPTV apps that will offer you inflated freedom on your IPTV journey.
+                </p> 
+              
+                <div class="flex gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563eb" class="w-6 h-6 ">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                    </svg>
+                   <p class="text-base mb-6   text-slate-700 dark:text-slate-500">
+                       You can use a free IPTV App like IPTV SMARTERS PRO but for better
+                       performance we recommand to use a paid IPTV App like: IBO PLAYER PRO ..
+                   </p>
+                </div>
+              
+
+                <h1 class="font-bold mb-6 text-gray-500 sm:text-xl dark:text-gray-400">How to setup IPTV on Smart Tv ?</h1>
+                <div class="flex gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563eb" class="w-6 h-6 ">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                    </svg>
+                   <p class="text-base mb-6 underline  text-slate-700 dark:text-slate-500">
+                       Paid Option
+                   </p>
+                </div>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 01 </span>: You can download  <span class="text-blue-700 uppercase">ibo player pro</span>  from your TV store on samsung,LG..</p>
+                <ul>
+                    <li class="list-disc text-slate-500 ml-6 ">
+                        <p class="font-light mb-4 text-gray-500  dark:text-gray-400"> Download the APK for Android , Amazon fire TV <a href="https://shorturl.at/hsMW1" class="text-blue-600">https://shorturl.at/hsMW1</a> (downloader code 834339)</p>
+                    </li>
+                    <li class="list-disc text-slate-500 ml-6 ">
+                        <p class="font-light mb-4 text-gray-500  dark:text-gray-400"> Download the APK for Samsung TV <a href="https://shorturl.at/nAOUY" class="text-blue-600">https://shorturl.at/nAOUY</a></p>
+                    </li>
+                 </ul>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400"> <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 02 </span>: After the installation,open the app you will find MAC address on screen.</p>
+                <p class=" font-light mb-4 text-center text-gray-500 sm:text-lg dark:text-gray-400">
+                    <p class="hidden font-light  text-gray-500 sm:text-lg dark:text-gray-400"><span class="text-yellow-300">Ex:</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(250,220,22)" class="w-6 h-6 inline-block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
+                      </svg>
+                    </p>
+                  <div class="mb-4"><img src="img/tutorial/iptv-setup-smart-img.webp" class="hidden w-full h-full rounded-md" alt="get the mac address"></div>
+                </p>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 03 </span>: Send us the MAC address via Whatsapp / Email.
+               </p>
+               <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 04 </span>: After a few minutes,restart/reboot your TV and Open the app.
+               </p>
+            <div class="max-w-216 my-10 mx-auto  bg-slate-400 dark:bg-slate-600 rounded-sm h-1"></div>
+            
+               <div class="flex gap-2 mb-2">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563eb" class="w-6 h-6 ">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                   </svg>
+                  <p class="text-base mb-6 underline  text-slate-700 dark:text-slate-500">
+                   Free Option
+                   </p> 
+               </div>
+               <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                <span class="text-base  uppercase font-bold  text-slate-700 dark:text-slate-500">Samsung TV </span>: Download and install IPTV SMARTERS PRO Video Tutorial <a class="text-blue-600" href="https://www.youtube.com/watch?v=W4AQdR_3qx8&list=PLyb1TFmbJ_VO_XXOFH3J6fuFfALvxUe2y&index=1" target="_blank">Click here..</a>
+               </p>
+               <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                <span class="text-base  uppercase font-bold  text-slate-700 dark:text-slate-500">Lg Smart TV </span>: Download and install IPTV SMARTERS PRO Video Tutorial <a class="text-blue-600" href="https://www.youtube.com/watch?v=QuYMR-O5OBU" target="_blank">Click here..</a>
+               </p>
+               <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                If you have other type of Smart TV , Please Contact our support team at <a class="text-blue-600" aria-label="Chat on WhatsApp" href="https://wa.me/+12519104872" target="_blank">WhatsApp +1 (251) 910-4872</a>
+               </p>
+               <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                After the installation follow those steps :
+               </p>
+               <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 01 </span>: Open the app once downloaded and Enter the login details. </p>
+               <div class="mb-4"><img src="img/tutorial/smarters-pro-img.webp" class="w-full h-full rounded-md" alt="get the mac address"></div>
+               <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 02 </span>: Enter the login details that we have provided you after you get a subscription with us. </p>
+               <div class="flex items-center mb-4 gap-4">
+                <p class="inline-block font-light ml-4 text-gray-500 sm:text-lg dark:text-gray-400">Now Click on “ADD USER” to proceed to the next section.</p>     
+               </div>
+               <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 03 </span>: Wait some seconds.. </p>
+               <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 04 </span>: Now click on “Live TV” icon as depicted in the image </p>
+               <div class="mb-4 "><img src="img/tutorial/smarters-pro-2-img.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+               <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 04 </span>: Now you must click on the channel name and then double click on the small screen to turn into full screen as the final step done. </p>
+               <p class=" text-blue-700 font-bold mt-10 sm:text-xl ">
+                Thank You
+               </p>
+            </div>
+            <!-- android -->
+            <div class="tab-content hidden " >
+                <div class="flex gap-2">
+                    <p class="text-base mb-6   text-slate-700 dark:text-slate-500">
+                        You can use a free IPTV App like IPTV SMARTERS PRO but for better
+                        performance we recommand to use a paid IPTV App like: IBO PLAYER PRO ..
+                    </p>
+                 </div>
+               
+               
+ 
+                 <h1 class="font-bold mb-6 text-gray-500 sm:text-xl dark:text-gray-400">How to setup IPTV on Android Devices ?</h1>
+                 <div class="flex gap-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563eb" class="w-6 h-6 ">
+                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                     </svg>
+                    <p class="text-base mb-6 underline  text-slate-700 dark:text-slate-500">
+                        Paid Option
+                    </p>
+                 </div>
+                 <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 01 </span>: You can download  <span class="text-blue-700 uppercase">ibo player pro</span> from their official website.</p>
+                 <ul>
+                    <li class="list-disc text-slate-500 ml-6 ">
+                        <p class="font-light mb-4 text-gray-500  dark:text-gray-400"> Download the APK for android <a href="https://shorturl.at/hsMW1" class="text-blue-600">https://shorturl.at/hsMW1</a> (downloader code 834339)</p>
+                    </li>
+                 </ul>
+
+                 <p class="font-light mb-4 text-gray-500  dark:text-gray-400"> <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 02 </span>: After the installation,open the app you will find MAC address on screen.</p>
+                 <p class=" font-light mb-4 text-center text-gray-500 sm:text-lg dark:text-gray-400">
+                     <p class="hidden font-light  text-gray-500 sm:text-lg dark:text-gray-400"><span class="text-yellow-300">Ex:</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(250,220,22)" class="w-6 h-6 inline-block">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
+                       </svg>
+                     </p>
+                   <div class="mb-4"><img src="img/tutorial/iptv-setup-smart-img.webp" class="hidden w-full h-full rounded-md" alt="get the mac address"></div>
+                 </p>
+                 <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                     <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 03 </span>: Send us the MAC address via Whatsapp / Email.
+                </p>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                 <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 04 </span>: After a few minutes,restart/reboot your TV and Open the app.
+                </p>
+             <div class="max-w-216 my-10 mx-auto  bg-slate-400 dark:bg-slate-600 rounded-sm h-1"></div>
+             
+                <div class="flex gap-2 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563eb" class="w-6 h-6 ">
+                     <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                    </svg>
+                   <p class="text-base mb-6 underline  text-slate-700 dark:text-slate-500">
+                    Free Option
+                    </p> 
+                </div>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 01 </span>:
+                    Start by downloading IPTV Smarters app  through this URL
+                    <a href="https://www.iptvsmarters.com/smarters.apk" class="text-blue-600">https://www.iptvsmarters.com/smarters.apk</a>
+                </p>
+              
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 02 </span>: Open the app once downloaded and Enter the login details. </p>
+                <div class="mb-4"><img src="img/tutorial/smarters-pro-img.webp" class="w-full h-full rounded-md" alt="get the mac address"></div>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 03 </span>: Enter the login details that we have provided you after you get a subscription with us. </p>
+                <div class="flex items-center mb-4 gap-4">
+                 <p class="inline-block font-light ml-4 text-gray-500 sm:text-lg dark:text-gray-400">Now Click on “ADD USER” to proceed to the next section.</p>     
+                </div>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 04 </span>: Wait some seconds.. </p>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 05 </span>: Now click on “Live TV” icon as depicted in the image </p>
+                <div class="mb-4 "><img src="img/tutorial/smarters-pro-2-img.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400"><span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 06 </span>: Now you must click on the channel name and then double click on the small screen to turn into full screen as the final step done. </p>
+                <p class=" text-blue-700 font-bold mt-10 sm:text-xl ">
+                 Thank You
+                </p>
+            </div> 
+            <!-- firestick -->
+            <div class="tab-content  hidden" >
+                <h1 class="font-bold mb-6 text-gray-500 sm:text-xl dark:text-gray-400">How to setup IPTV on Firestick TV ?</h1>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 01 </span>: Go to the Home Screen on your <span class="font-semibold">Fires Tv</span> Stick by clicking the <span class="font-semibold">Home Button</span>  on your Fire TV Stick Remote</p>
+                <div class="mb-4 flex flex-col justify-center items-center gap-4">
+                    <img src="img/tutorial/firestick-image-1.webp" class="h-1/2 w-1/2 rounded-md " alt="get the mac address">
+                    <img src="img/tutorial/firestick-image-2.webp" class=" rounded-md " alt="get the mac address">
+                </div>  
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 02 </span>: Go to <span class="font-semibold">Settings</span> on the Home Screen of your Fire TV Stick</p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-3.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 03 </span>: Select <span class="font-semibold">My Fire TV</span> from the menu of options</p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-4.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400"> <span class="text-lg uppercase italic font-bold  text-red-600">IMPORTANT :</span> Please see steps below if you don't see <span class="font-semibold">Developer Options </span>on your screen</p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-5.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400"> <span class="text-lg italic font-bold  text-red-600">IMPORTANT :</span> If you don't see <span class="font-semibold">Developer Options</span>, click on About once under the <span class="font-semibold">My Fire TV section</span>.</p>
+                <p class="font-light mb-4 text-gray-500 sm:text-lg italic dark:text-gray-400">Notice how Developer Options is missing from the screen below.</p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-6.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500 sm:text-lg italic dark:text-gray-400">Once you click on <span class="font-semibold">About</span>, hover over <span class="font-semibold">Fire TV Stick</span> and click the <span class="font-semibold">OK button</span>  on your remote 7 times to become a developer.</p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-7.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500 sm:text-lg italic dark:text-gray-400">When you click <span class="font-semibold">the back button now</span>, you will see that <span class="font-semibold">Developer Options</span> appears as an option under the <span class="font-semibold">My Fire TV section</span>.</p>
+                <p class="font-light mb-4 text-gray-500 sm:text-lg italic dark:text-gray-400">Now you can select Developer Options.</p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-8.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 04 </span>: Turn on <span class="font-semibold">ADB Debugging</span> and <span class="font-semibold">Apps</span> from Unknown Sources</p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-9.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <!-- intsall downloader -->
+                <h1 class="font-bold mb-6 text-gray-500 sm:text-xl dark:text-gray-400">Install Downloader</h1>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 01 </span>:  Go back to the Home Screen on your <span class="font-semibold">Fires Tv</span> Stick by clicking the <span class="font-semibold">Home Button</span>  on your Fire TV Stick Remote</p>
+                <div class="mb-4 flex flex-col justify-center items-center gap-4">
+                    <img src="img/tutorial/firestick-image-1.webp" class="h-1/2 w-1/2 rounded-md " alt="get the mac address">
+                    <img src="img/tutorial/firestick-image-2.webp" class=" rounded-md " alt="get the mac address">
+                </div>  
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 02 </span>: Got to <span class="font-semibold">Find</span> and then click on the <span class="font-semibold">Search</span> button.Search for <span class="font-semibold">Downloader</span> </p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-10.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-11.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 03 </span>: Select <span class="font-semibold">Downloader</span> from the list of options and click <span class="font-semibold">Download</span>. Now Downloader will install onto your <span class="font-semibold">firestick</span>.</p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-12.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 04 </span>: Click on <span class="font-semibold">Open</span> to the  <span class="font-semibold">Downloader</span> app.</p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-13.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 05 </span>: Once the <span class="font-semibold">Downloader</span> apps opens, click <span class="font-semibold">Allow </span>then click <span class="font-semibold">OK</span>
+                </p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-14.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-15.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <!-- install iptv smarters -->
+                <div class="flex gap-2 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563eb" class="w-6 h-6 ">
+                     <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                    </svg>
+                   <p class="text-base mb-6 underline  text-slate-700 dark:text-slate-500">
+                    Free Option
+                    </p> 
+                </div>
+                <h1 class="font-bold mb-6 text-gray-500 sm:text-xl dark:text-gray-400">Install IPTV Smarters</h1>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 01 </span>: Go to the URL area in <span class="font-semibold">Downloader and type in </span>
+                    <a href="https://cordcuttersanonymous.com/smarters"  class="text-pink-600 text-base font-medium">cordcuttersanonymous.com/smarters</a> then click
+                    <span class="font-semibold"> GO</span>
+                </p>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-16.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 02 </span>: When prompted, click on <span class="font-semibold">Install</span>,Now <span class="font-semibold">Iptv Smarters </span>will install onto your  <span class="font-semibold">Firestick</span>
+                <div class="mb-4 "><img src="img/tutorial/firestick-image-18.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 03 </span>: Open the app once downloaded and Enter the login details.</p>
+                <div class="mb-4"><img src="img/tutorial/smarters-pro-img.webp" class="w-full h-full rounded-md" alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 04 </span>: Enter the login details that we have provided you after you get a subscription with us.
+                </p>
+                <div class="flex items-center mb-4 gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(255,220,22)" class="w-6 h-6 ">
+                            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="inline-block font-light  mb-2 text-gray-500 sm:text-lg dark:text-gray-400">Now Click on “ADD USER” to proceed to the next section.</p>     
+                </div>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 05 </span>: Wait some seconds.
+                </p>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 06 </span>: Now click on “Live TV” icon as depicted in the image.
+                </p>
+                <div class="mb-4 "><img src="img/tutorial/smarters-pro-2-img.webp" class="w-full h-full rounded-md " alt="get the mac address"></div>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 07 </span>: Now you must click on the channel name and then double click on the small screen to turn into full screen as the
+                </p> 
+                <p class="mt-6 text-blue-600 font-bold sm:text-xl ">
+                    Thank You
+                   </p>
+            </div>
+
+            <!-- apple and ios -->
+            <div class="tab-content  hidden" >
+                <h1 class="font-bold mb-6 text-gray-500 sm:text-xl dark:text-gray-400">How To Setup IPTV On Apple/IOS With IPTV Smarters Player ?</h1>
+                <div class="flex gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563eb" class="w-6 h-6 ">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                    </svg>
+                   <p class="text-base mb-6 underline  text-slate-700 dark:text-slate-500">
+                       Paid Option
+                   </p>
+                </div>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 01 </span>: Download  <span class="text-blue-700 uppercase">ibo player pro</span> by typing "ibo Pro Player" in app store.
+                    <div class="mb-4"><img src="img/tutorial/ibo pro player.webp" class="w-full h-full rounded-md" alt="ibo pro player app store"></div>
+                </p>
+               
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400"> <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 02 </span>: After the installation,open the app you will find MAC address on screen.</p>
+                <p class=" font-light mb-4 text-center text-gray-500 sm:text-lg dark:text-gray-400">
+                    <p class="hidden font-light  text-gray-500 sm:text-lg dark:text-gray-400"><span class="text-yellow-300">Ex:</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(250,220,22)" class="w-6 h-6 inline-block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
+                      </svg>
+                    </p>
+                  <div class="mb-4"><img src="img/tutorial/iptv-setup-smart-img.webp" class="hidden w-full h-full rounded-md" alt="get the mac address"></div>
+                </p>
+                <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 03 </span>: Send us the MAC address via Whatsapp / Email.
+               </p>
+               <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 04 </span>: After a few minutes,restart/reboot your TV and Open the app.
+               </p>
+            <div class="max-w-216 my-10 mx-auto  bg-slate-400 dark:bg-slate-600 rounded-sm h-1"></div>
+            
+            <div class="flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563eb" class="w-6 h-6 ">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                </svg>
+               <p class="text-base mb-6 underline  text-slate-700 dark:text-slate-500">
+                   Free Option
+               </p>
+            </div>
+                
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400">
+                <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 01 </span>: Start by downloading IPTV Smarters app from the Apple Store  through this URL : <a href="https://apps.apple.com/in/app/smarters-player-lite/id1628995509"  class="text-blue-600 text-base font-medium">https://apps.apple.com/in/app/smarters-player-lite/id1628995509</a>
+                </p>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 02 </span>: Open the app once downloaded and Enter the login details.
+                </p>
+                <div class="mb-4"><img src="img/tutorial/smarters-pro-img.webp" class="w-full h-full rounded-md" alt="get the mac address"></div>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 03 </span>: Enter the login details that we have provided you after you get a subscription with us.
+                </p>
+                <div class="flex  mb-4 items-center gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(255,220,22)" class="w-6 h-6 ">
+                            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="inline-block font-light  mb-2 text-gray-500 sm:text-lg dark:text-gray-400">Now Click on “ADD USER” to proceed to the next section.</p>     
+                </div>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 04 </span>: Wait some seconds.
+                </p>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 05 </span>: Now click on “Live TV” icon as depicted in the image.
+                </p>
+                <div class="mb-4"><img src="img/tutorial/smarters-pro-2-img.webp" class="w-full h-full rounded-md" alt="get the mac address"></div>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 06 </span>: Now you must click on the channel name and then double click on the small screen to turn into full screen as the
+                </p>  
+                <p class="mt-6 text-blue-600 font-bold sm:text-xl ">
+                    Thank You
+                </p>
+            </div>
+            <!-- pc and mac -->
+            <div class="tab-content  hidden" >
+                <h1 class="font-bold mb-6 text-gray-500 sm:text-xl dark:text-gray-400">How To Setup IPTV On Windows or Mac ?</h1>
+                <h2 class="text-slate-800 mb-6 dark:text-slate-300 text-xl font-bold">Windows </h2>
+                <div class="flex gap-2 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563eb" class="w-6 h-6 ">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                    </svg>
+                   <p class="text-base  underline  text-slate-700 dark:text-slate-500">
+                       Free Option
+                   </p>
+                </div>
+                <p class="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400">
+                    <ul>
+                        <li class="list-disc text-slate-500 ml-6 ">
+                            <p class="font-light mb-4 text-gray-500  dark:text-gray-400"> VLC </p>
+                            <ul>
+                                <li class="list-decimal text-slate-500 ml-6 ">
+                                    <p class="font-light mb-4 text-gray-500  dark:text-gray-400">Download "VLC" by clicking <a href="https://www.videolan.org/vlc/download-windows.html" target="_blank"  class="text-blue-600">here</a></p>
+                                </li>
+                                <li class="list-decimal text-slate-500 ml-6 ">
+                                    <p class="font-light mb-4 text-gray-500  dark:text-gray-400">Activate your IPTV credentials as montion in this  <a href="https://www.youtube.com/watch?v=-O49cBQCQDc" target="_blank"  class="text-blue-600">Tutorial Video</a></p>
+                                </li>
+                             </ul>
+                        </li>
+                     </ul>
+                </p>
+                <p class="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400">
+                    <ul>
+                        <li class="list-disc text-slate-500 ml-6 ">
+                            <p class="font-light mb-4 text-gray-500  dark:text-gray-400"> IPTV Smarters Pro </p>
+                            <ul>
+                                <li class="list-decimal text-slate-500 ml-6 ">
+                                   <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                                    Download "IPTV Smarters app" for windows by clicking  <a href="https://www.iptvsmarters.com/download?download=windows" class="text-blue-600 text-base font-medium">here</a>
+                                    </p>
+                                </li>
+                             </ul>
+                        </li>
+                     </ul>
+                </p>
+                <div class="max-w-216 my-10 mx-auto  bg-slate-400 dark:bg-slate-600 rounded-sm h-1"></div>
+                <h2 class="text-slate-800 mb-6 dark:text-slate-300 text-xl font-bold">MAC </h2>
+                <div class="flex gap-2 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563eb" class="w-6 h-6 ">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                    </svg>
+                   <p class="text-base  underline  text-slate-700 dark:text-slate-500">
+                       Free Option
+                   </p>
+                </div>
+                <p class="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400">
+                    <ul>
+                        <li class="list-disc text-slate-500 ml-6 ">
+                            <p class="font-light mb-4 text-gray-500  dark:text-gray-400"> VLC </p>
+                            <ul>
+                                <li class="list-decimal text-slate-500 ml-6 ">
+                                    <p class="font-light mb-4 text-gray-500  dark:text-gray-400">Download "VLC" by clicking <a href="https://www.videolan.org/vlc/download-macosx.html" target="_blank"  class="text-blue-600">here</a></p>
+                                </li>
+                                <li class="list-decimal text-slate-500 ml-6 ">
+                                    <p class="font-light mb-4 text-gray-500  dark:text-gray-400">Activate your IPTV credentials as montion in this  <a href="https://www.youtube.com/watch?v=-O49cBQCQDc" target="_blank"  class="text-blue-600">Tutorial Video</a></p>
+                                </li>
+                             </ul>
+                        </li>
+                     </ul>
+                </p>
+                <p class="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400">
+                    <ul>
+                        <li class="list-disc text-slate-500 ml-6 ">
+                            <p class="font-light mb-4 text-gray-500  dark:text-gray-400"> IPTV Smarters Pro </p>
+                            <ul>
+                                <li class="list-decimal text-slate-500 ml-6 ">
+                                   <p class="font-light mb-4 text-gray-500  dark:text-gray-400">
+                                    Download "IPTV Smarters app" for windows by clicking  <a href="https://www.iptvsmarters.com/download?download=mac" class="text-blue-600 text-base font-medium">here</a>
+                                    </p>
+                                </li>
+                             </ul>
+                        </li>
+                     </ul>
+                </p>
+                <p class=" text-blue-600 mt-8 font-bold sm:text-xl ">
+                    Thank You
+                </p>
+            </div>
+            <div class="tab-content  hidden " >
+                <h1 class="font-bold mb-6 text-gray-500 sm:text-xl dark:text-gray-400">How To Setup IPTV On MAG ?</h1>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 01 </span>: Send us the <span class="text-blue-600">MAC Address</span> of your <span class="text-blue-600">MAG</span> via Whatsapp or gmail 
+                </p>
+                <p class="font-light  mb-4 text-gray-500  dark:text-gray-400">
+                    <span class="text-base  uppercase font-bold underline text-slate-700 dark:text-slate-500">Step 02 </span>: After making the payment, we will send you the portal link 
+                </p>
+                <p class=" text-blue-600 mt-8 font-bold sm:text-xl ">
+                    Thank You
+                </p>
+            </div>
+            
+        </div>
+      
+    </main>
+
+<footer class="p-4 mt-20 bg-white sm:p-6 dark:bg-gray-900">
+    <div class="mx-auto max-w-screen-xl">
+        <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="#hero-section" class="flex items-center">
+                    <div class="flex flex-col">
+                        <span class=" bg-clip-text max-w-2xl  text-2xl sm:text-4xl font-extrabold tracking-wider text-pink-500 " style="font-family: 'Nero', sans-serif;">BELIPTV  </span>
+                        <span class=" italic sm:text-xs font-bold tracking-wider text-slate-500" style="font-size: 8px;">LIVE CHANNELS AND VOD</span>
+                    </div>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">welcome</h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="index.html" class="hover:underline ">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#pricing" class="hover:underline">Pricing Plan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="mailto:beliptv.manager@gmail.com" target="_blank" class="hover:underline ">Gmail</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/+17739456587" target="_blank" class="hover:underline">What's App</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="privacy&terms.html" class="hover:underline">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="privacy&terms.html" class="hover:underline">Terms &amp; Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="index.html" class="hover:underline">BELIPTV</a>. All Rights Reserved.
+            </span>
+        </div>
+    </div>
+</footer>
+<!-- Default Statcounter code for mywebsite https://www.beliptv.com -->
+<script type="text/javascript">
+    var sc_project=12942221; 
+    var sc_invisible=1; 
+    var sc_security="7d9a4a6f"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+    Statcounter" href="https://statcounter.com/" target="_blank"><img
+    class="statcounter" src="https://c.statcounter.com/12942221/0/7d9a4a6f/1/"
+    alt="Web Analytics Made Easy - Statcounter"
+    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+</body>
+</html>

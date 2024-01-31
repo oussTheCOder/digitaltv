@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+@layer utilities {
+  
+  .iptv::before{
+    @apply content-['iptv..'] absolute top-0 left-0  h-[100%] border-r-2 border-pink-700  text-pink-700  overflow-hidden animate-animate ;
+    
+  }
+
+
+  
+
+  .background{
+  opacity: 0.8;
+  background-image:  linear-gradient(#f2f6ff 1.7000000000000002px, transparent 1.7000000000000002px), linear-gradient(to right, #f2f6ff 1.7000000000000002px, #fafeff 1.7000000000000002px);
+  background-size: 34px 34px;
+  }
+  .backgroundDark{
+    background-color: #111827;
+    opacity: 1;
+    background-image:  linear-gradient(#151a31 1.5px, transparent 1.5px), linear-gradient(to right, #151a31 1.5px, #111827 1.5px);
+    background-size: 30px 30px;
+  }
+  
+  .backgroundMesh{
+    /* background-color: #fdfdfd; */
+background-image: radial-gradient(at 72% 47%, rgb(247, 218, 240) 0, hsla(164, 85%, 50%, 0) 50%),
+radial-gradient(at 47% 87%, rgb(181, 234, 245) 0, hsla(190, 85%, 68%, 0) 50%);
+  }
+  .backgroundHomeOne{
+    /* background-color: #d3f2fd; */
+    background-image:
+     radial-gradient(at 94% 62%, hsla(304, 87%, 67%, 0.5) 0, hsla(304, 87%, 67%, 0) 50%),
+    radial-gradient(at 51% 94%, hsla(246, 88%, 64%, 0.5) 0, hsla(246, 88%, 64%, 0) 50%);
+  }
+  .backgroundMeshDark{
+    /* background-color: #fdfdfd; */
+    background-color: #111827;
+    background-image: radial-gradient(at 100% 7%, hsla(259, 91%, 70%, 1) 0, hsla(259, 53%, 63%, 0) 30%),
+    radial-gradient(at 30% 70%, hsla(255, 91%, 62%, 1) 0, hsla(255, 91%, 62%, 0) 50%);
+  }
+  .thank-light{
+    background-image: url('./../img/thank-you/thank-light.webp');
+  }
+  .thank-dark{
+    background-image: url('./../img/thank-you/thank-dark.webp');
+  }
+  .active-tab{
+    border: 2px solid rgb(62, 78, 222);
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .letter {
+    visibility: hidden;
+  }
+
+  
+}
+  
+
+  
